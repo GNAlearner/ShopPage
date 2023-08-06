@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.frame {
+    background-color: fff;
+    width: 30vw;
+    height: 75vh;
+    margin-top: 10vh;
+}
+
+.title {
+    text-align: center;
+    position: relative;
+    color: #007F61;
+    font-weight: bold;
+    font-size: large;
+}
+
+.title::before,
+.title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    width: 33%;
+    background-color: #C8C8C8;
+}
+
+.title::before {
+    left: 0;
+}
+
+.title::after {
+    right: 0;
+}
+
+.box{
+    height:auto;
+    border-radius: 3.615px;
+    border: 0.904px solid #C8C8C8;
+    margin-top: 5vh;
+    cursor: pointer;
+}
+
+.regular-content{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+}
+
+.extra-content {
+    display: none;
+    margin-left: 3vw;
+    margin-bottom: 1vw;
+}
+
+.box.selected {
+    border: 0.904px solid #007F61;
+}
+
+
+.details {
+    display: flex;
+    height:auto;
+    margin-top: 5vh;
+}
+
+.radioBtn {
+    margin-left: 2vw;
+}
+
+.qty {
+    margin-left: 2vw;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.offer {
+    width: 100%;
+    text-align: justify;
+    text-align-last: right;
+    margin-right: 2vw;
+    font-weight: bold;
+}
+
+.discount {
+    margin-left: 3vw;
+    margin-top: 3vh;
+    white-space: nowrap;
+    font-size: small;
+}
+
+.trending {
+    color: #007F61;
+}
+
+.shipping {
+    color: #007F61;
+    white-space: nowrap;
+}
+
+.total {
+    width: 100%;
+    text-align: justify;
+    text-align-last: right;
+    font-weight: bold;
+}
+
+.addCartBtn {
+    width: 100%;
+    height: 10vh;
+    margin-top: 5vh;
+    background-color: #007F61;
+    border-radius: 4px 4px 4px 4px;
+    border: none;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+}
+
+.footer {
+    font-style: italic;
+    text-align-last: right;
+    margin-top: 1vh;
+}

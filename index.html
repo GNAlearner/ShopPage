@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>ShopApp</title>
+    <Link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="frame">
+        <header class="title">
+            <h1">Bundle & Save</h1>
+        </header>
+        <main>
+            <section class="box" onclick="toggleExtraContent('content1', this)">
+                <article class="regular-content">
+                    <input class="radioBtn" type="radio" name="sections" value="section1"></input>
+                    <span>
+                        <article class="qty">1 Pair</article>
+                        <article class="qty">DKK 195.00</article>
+                    </span>
+                    <span class="offer">
+                        <article>50% OFF</article>
+                    </span>
+                </article>
+                <article class="extra-content" id="content1">
+                    <div>
+                        <span style="margin-left:2.25vw;font-size:small">Size</span>
+                        <span style="margin-left:3.75vw;font-size:small">Colour</span>
+                    </div>
+                    <div>
+                        <span>#1</span>
+                        <select style="margin-left:0.5vw;width:5vw;height:2rem;">
+                            <option>S</option>
+                        </select>
+                        <Select style="margin-left:0.75vw;width:5vw;height:2rem;">
+                            <option>Colour</option>
+                        </Select>
+                    </div>
+                </article>
+            </section>
+            <section class="box" onclick="toggleExtraContent('content2', this)">
+                <article class="regular-content">
+                    <input class="radioBtn" type="radio" name="sections" value="section2"></input>
+                    <span>
+                        <article class="qty">2 Pair</article>
+                        <article class="qty">DKK 345.00</article>
+                    </span>
+                    <span>
+                        <article class="discount">
+                            <del>DKK 195.00</del>
+                        </article>
+                    </span>
+                    <span class="offer">
+                        <article class="trending">Most Popular</article>
+                        <article>40% OFF</article>
+                    </span>
+                </article>
+                <article class="extra-content" id="content2">
+                    <div>
+                        <span style="margin-left:2.25vw;font-size:small">Size</span>
+                        <span style="margin-left:4vw;font-size:small">Colour</span>
+                    </div>
+                    <div>
+                        <span style="margin-right:2px">#1</span>
+                        <select style="margin-left:0.5vw;width:5vw;height:2rem;">
+                            <option>S</option>
+                        </select>
+                        <Select style="margin-left:0.75vw;width:5vw;height:2rem;">
+                            <option>Colour</option>
+                        </Select>
+                    </div>
+                    <div style="margin-top:1vw;">
+                        <span>#2</span>
+                        <select style="margin-left:0.5vw;width:5vw;height:2rem;">
+                            <option>S</option>
+                        </select>
+                        <Select style="margin-left:0.75vw;width:5vw;height:2rem;">
+                            <option>Colour</option>
+                        </Select>
+                    </div>
+                </article>
+            </section>
+            <section class="box" onclick="toggleExtraContent('content3', this)">
+                <article class="regular-content">
+                    <input class="radioBtn" type="radio" name="sections" value="section3"></input>
+                    <span>
+                        <article class="qty">3 Pair</article>
+                        <article class="qty">DKK 528.00</article>
+                    </span>
+                    <span class="offer">
+                        <article>60% OFF</article>
+                    </span>
+                </article>
+                <article class="extra-content" id="content3">
+                    <div>
+                        <span style="margin-left:2.25vw;font-size:small">Size</span>
+                        <span style="margin-left:4vw;font-size:small">Colour</span>
+                    </div>
+                    <div>
+                        <span style="margin-right:2px">#1</span>
+                        <select style="margin-left:0.5vw;width:5vw;height:2rem;">
+                            <option>S</option>
+                        </select>
+                        <Select style="margin-left:0.75vw;width:5vw;height:2rem;">
+                            <option>Colour</option>
+                        </Select>
+                    </div>
+                    <div style="margin-top:1vw;">
+                        <span>#2</span>
+                        <select style="margin-left:0.5vw;width:5vw;height:2rem;">
+                            <option>S</option>
+                        </select>
+                        <Select style="margin-left:0.75vw;width:5vw;height:2rem;">
+                            <option>Colour</option>
+                        </Select>
+                    </div>
+                    <div style="margin-top:1vw;">
+                        <span>#3</span>
+                        <select style="margin-left:0.5vw;width:5vw;height:2rem;">
+                            <option>S</option>
+                        </select>
+                        <Select style="margin-left:0.75vw;width:5vw;height:2rem;">
+                            <option>Colour</option>
+                        </Select>
+                    </div>
+                </article>
+            </section>
+            <section class="details">
+                <span class="shipping">
+                    Free 2 Day Shipping
+                </span>
+                <span class="total">
+                    Total : DKK 360.00
+                </span>
+            </section>
+            <button class="addCartBtn">+ Add to Cart</button>
+        </main>
+        <footer class="footer">
+            &copy; Powered by Pumper
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

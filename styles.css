@@ -217,6 +217,7 @@ select {
     appearance: none;
     background: #fff;
     padding-left: 2px;
+    cursor: pointer;
 }
 
 .arrow-down {

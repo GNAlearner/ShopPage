@@ -1,27 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
+@font-face {
+    font-family: 'Metropolis';
+    src: url('./metropolis/Metropolis-Light.otf') format('opentype');
+    /* font-family: 'Metropolis-light';
+    src: url('./metropolis/Metropolis-Light.otf') format('opentype'); */
+}
 
 body {
+    color:#000;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
+    font-style: normal;
+    line-height: normal;
+    font-weight: normal;
 }
 
 .frame {
-    background-color: fff;
-    width: 30vw;
-    height: 75vh;
-    margin-top: 10vh;
+    background-color: #fff;
+    width: 341px;
+    height: auto;
+    margin-top: 20px;
 }
 
 .title {
     text-align: center;
     position: relative;
     color: #007F61;
+    font-family: 'Metropolis';
+    font-size: 18.076px;
     font-weight: bold;
-    font-size: large;
+    margin-bottom: 0.07px;
 }
 
 .title::before,
@@ -30,7 +41,7 @@ body {
     position: absolute;
     top: 50%;
     height: 1px;
-    width: 33%;
+    width: 93.996px;
     background-color: #C8C8C8;
 }
 
@@ -46,40 +57,44 @@ body {
     height:auto;
     border-radius: 3.615px;
     border: 0.904px solid #C8C8C8;
-    margin-top: 5vh;
+    margin-top: 18.08px;
+    font-family: 'Metropolis';
     cursor: pointer;
 }
 
 .regular-content{
-    height: 15vh;
+    height: 74.112px;
     display: flex;
     align-items: center;
 }
 
-.extra-content {
-    display: none;
-    margin-left: 3vw;
-    margin-bottom: 1vw;
-}
-
 .box.selected {
     border: 0.904px solid #007F61;
+    font-family: 'Inter';
+    background-color: #F4FBF9;
 }
 
 
 .details {
     display: flex;
     height:auto;
-    margin-top: 5vh;
+    margin-top: 24.69px;
+    font-size: 14px;
 }
 
 .radioBtn {
-    margin-left: 2vw;
+    margin-left: 21.69px;
 }
 
 .qty {
-    margin-left: 2vw;
+    margin-left: 18.08px;
+    font-size: 14.461px;
+}
+
+.price {
+    margin-left: 18.08px;
     white-space: nowrap;
+    font-size: 14.461px;
     font-weight: bold;
 }
 
@@ -87,19 +102,67 @@ body {
     width: 100%;
     text-align: justify;
     text-align-last: right;
-    margin-right: 2vw;
+    margin-right: 21.77px;
+    font-size: 14.461px;
     font-weight: bold;
 }
 
 .discount {
-    margin-left: 3vw;
-    margin-top: 3vh;
     white-space: nowrap;
-    font-size: small;
+    font-size: 9.942px;
+    margin-left: 25px;
+    margin-top: 16px;
 }
 
 .trending {
     color: #007F61;
+    font-size: 12.653px;
+    font-weight: bold;
+}
+
+.extra-content {
+    display: none;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.item-line {
+    margin-top: 4px;
+}
+
+.size {
+    font-size: 9.942px;
+    margin-left: 56px;
+}
+
+.colour {
+    font-size: 9.942px;
+    margin-left: 45px;
+}
+
+.noOfItem {
+    display:inline-block;
+    width: 11px;
+    font-size: 9.038px;
+    margin-left: 35px;
+}
+
+.sizeOption {
+    width: 65.978px;
+    height: 25.306px;
+    border-radius: 1.808px;
+    border: 0.904px solid #D9D9D9;
+    background-color: #FFF;
+    margin-left: 5px;
+}
+
+.colourOption {
+    width: 65.978px;
+    height: 25.306px;
+    border-radius: 1.808px;
+    border: 0.904px solid #D9D9D9;
+    background-color: #FFF;
+
 }
 
 .shipping {
@@ -111,23 +174,25 @@ body {
     width: 100%;
     text-align: justify;
     text-align-last: right;
-    font-weight: bold;
 }
 
 .addCartBtn {
     width: 100%;
-    height: 10vh;
-    margin-top: 5vh;
+    height: 48px;
+    margin-top: 24.69px;
     background-color: #007F61;
-    border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 0px;
     border: none;
-    color: white;
-    font-size: large;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
 }
 
 .footer {
-    font-style: italic;
     text-align-last: right;
-    margin-top: 1vh;
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
 }

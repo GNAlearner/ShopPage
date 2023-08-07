@@ -165,6 +165,15 @@ body {
 
 }
 
+/* select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png);
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 2px;
+  } */
+
 .shipping {
     color: #007F61;
     white-space: nowrap;
@@ -195,4 +204,28 @@ body {
     font-size: 12px;
     font-weight: 300;
     font-style: italic;
+}
+
+.custom-arrow {
+    position: relative;
+    display: inline-block;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    padding-left: 2px;
+}
+
+.arrow-down {
+    position: absolute;
+    top: 40%;
+    right: 8px;
+    width: 0;
+    height: 0;
+    border-left: 2.5px solid transparent;
+    border-right: 2.5px solid transparent;
+    border-top: 5px solid #000;
 }
